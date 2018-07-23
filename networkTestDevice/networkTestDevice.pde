@@ -15,13 +15,13 @@ float myAccelerometerX, myAccelerometerY, myAccelerometerZ;
 int x, y, p;
 
 String myIPAddress;
-String remoteAddress = "192.168.15.74";
+String remoteAddress = "192.168.15.19";
 
 void setup() {
   sensor = new KetaiSensor(this);
   orientation(PORTRAIT);
   textAlign(CENTER, CENTER);
-  textSize(72);
+  textSize(50);
   initNetworkConnection();
   sensor.start();
 }
